@@ -19,6 +19,18 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   background-color: var(--off-white);
+  position: relative; 
+}
+
+.overlay {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  background-color: #000;
+  opacity: 0.7; 
+  z-index: 1; 
+  height: 100%;
+  width: 100%;
 }
 
 header {
@@ -37,8 +49,39 @@ header {
   display: none;
 }
 
-ul {
+.menu-close.active {
+  display: block;
+  position: fixed; 
+  top: 25px;  
+  right: 25px; 
+  z-index: 6;
+}
+
+.links {
   display: none;
+}
+
+.links.active {
+  background-color: var(--off-white);
+  position: fixed; 
+  right: 0; 
+  top: 0; 
+  height: 100vh;
+  padding: 8rem 7rem 2rem 2rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+  z-index: 5;
+}
+
+li {
+  list-style: none; 
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.2rem; 
+  color: var(--very-dark-blue); 
 }
 
 main {
