@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%); 
+  --soft-red: hsl(5, 85%, 63%); 
+  --off-white: hsl(36, 100%, 99%); 
+  --grayish-blue: hsl(233, 8%, 79%); 
+  --dark-grayish-blue: hsl(236, 13%, 42%); 
+  --very-dark-blue: hsl(240, 100%, 5%); 
+}
+
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-color: var(--off-white);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; 
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu-close {
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+main {
+  padding: 0 1rem 1rem 1rem; 
+}
+
+section {
+  width: 100%;
+}
+
+.main-article img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.main-article h1 {
+  font-weight: 800;
+  font-size: 3rem; 
+  margin-bottom: 1.5rem;
+}
+
+.main-article p {
+  margin-bottom: 1.5rem;
+}
+
+.main-article button {
+  background-color: var(--soft-red);
+  color: var(--off-white); 
+  border: none; 
+  outline: none; 
+  padding: 1rem 2rem; 
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
