@@ -74,3 +74,30 @@ section {
   letter-spacing: 0.2rem;
   margin-bottom: 3rem;
 }
+
+.new-articles {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white); 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+  padding: 1.5rem;
+  line-height: 2rem; 
+  margin-bottom: 3rem;
+}
+
+.new-articles h2 {
+  color: var(--soft-orange);
+}
+
+.new h3 {
+  font-size: 1.2rem; 
+}
+
+.new p {
+  color: var(--dark-grayish-blue); 
+}
+
+hr {
+  border: 1px solid var(--dark-grayish-blue); 
+}
