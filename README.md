@@ -8,15 +8,11 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -35,8 +31,6 @@ Users should be able to:
 
 - Solution URL: [Github](https://github.com/kaecodes/news-homepage.git)
 - Live Site URL: [Live URL](https://kaecodes.github.io/news-homepage/)
-
-## My process
 
 ### Built with
 
