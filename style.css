@@ -162,7 +162,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem; 
 }
 
@@ -208,6 +208,20 @@ hr {
 }
 
 /* Media Queries */
+
+@media (min-width: 768px) {
+  header, main {
+    width: 70%;
+    margin: auto; 
+  }
+}
+
+@media (min-width: 1024px) {
+  header,  main {
+    width: 60%;
+    margin: auto; 
+  }
+}
 
 @media (min-width: 1440px) {
 
@@ -270,9 +284,19 @@ hr {
   .trending-articles {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     grid-area: trending; 
     margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+
+  .pic {
+    height: 100%;
+  }
+
+  .text {
+    gap: 0.5rem; 
   }
 
   main {
