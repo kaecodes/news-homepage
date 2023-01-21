@@ -120,6 +120,12 @@ section {
   margin-bottom: 3rem;
 }
 
+.main-article button:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white); 
+  cursor: pointer; 
+}
+
 .new-articles {
   background-color: var(--very-dark-blue);
   color: var(--off-white); 
@@ -137,6 +143,11 @@ section {
 
 .new h3 {
   font-size: 1.2rem; 
+}
+
+.new h3:hover {
+  color: var(--soft-orange); 
+  cursor: pointer;
 }
 
 .new p {
@@ -187,6 +198,92 @@ hr {
   font-weight: 800;
 }
 
+.text h3:hover {
+  color: var(--soft-red); 
+  cursor: pointer;
+}
+
 .text p {
   color: var(--dark-grayish-blue); 
+}
+
+/* Media Queries */
+
+@media (min-width: 1440px) {
+
+  header, main {
+    width: 80%;
+    margin: auto; 
+  }
+
+  header {
+    padding-top: 4rem; 
+    padding-bottom: 3rem;
+  }
+
+  .menu-bars {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    gap: 2.5rem; 
+  }
+
+  .main-pic {
+    grid-area: mainpic; 
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .main-pic img {
+    width: 100%;
+  }
+
+  .main-heading {
+    grid-area: mainheading;
+    padding-right: 8rem;
+  }
+
+  .main-text {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      'mainheading maindesc';
+  }
+
+  .main-desc {
+    grid-area: maindesc; 
+  }
+
+  .main-desc p {
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+  }
+
+  .new-artciles {
+    grid-area: new;
+  }
+
+  .trending-articles {
+    display: flex;
+    flex-direction: row;
+    grid-area: trending; 
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto; 
+    column-gap: 1rem; 
+    grid-template-areas: 
+      'mainpic new'
+      'maintext new'
+      'trending trending';
+  }
+  
 }
